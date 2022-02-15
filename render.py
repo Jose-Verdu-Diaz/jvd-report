@@ -27,6 +27,12 @@ index_div_ul['class'] = index_div_ul('class', []) + ['list-unstyled', 'component
 nav_sidebar = soup.find('nav', {'id': 'sidebar'})
 nav_sidebar.append(index_div_ul)
 
+# Remove Input Prompt
+for div in soup.find_all("div", {'class':['jp-InputPrompt', 'jp-InputArea-prompt']}): div.decompose()
+
+# Remove Output Prompt
+for div in soup.find_all("div", {'class':['jp-OutputPrompt', 'jp-OutputArea-prompt']}): div.decompose()
+
 
 rendered = soup.prettify(formatter=None)
 
