@@ -25,5 +25,5 @@ nav_sidebar.append(index_div_ul)
 rendered = soup.prettify(formatter=None)
 
 # write the result to disk in index.html
-with open(f'jvd-report/{output_file}', 'w') as ofile:
+with open({output_file, 'w') as ofile:
     ofile.write(rendered)
