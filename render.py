@@ -15,9 +15,15 @@ template = env.get_template(input_file)
 rendered = template.render()
 soup = BeautifulSoup(rendered, 'html.parser')
 
+# Add Title
+title = soup.find('h1', {'id': 'title'}).extract()
+soup.find('h1', {'id': 'report_title'}).append(title.text)
+soup.find('title').append(title.text)
+soup.find('a', {'id': 'title_link'}).append(title.text)
+
+# Add Table of Contents
 index_div_ul = soup.find('div', {'id': 'index_div'}).find('ul')
 index_div_ul['class'] = index_div_ul('class', []) + ['list-unstyled', 'components mb-5']
-
 nav_sidebar = soup.find('nav', {'id': 'sidebar'})
 nav_sidebar.append(index_div_ul)
 

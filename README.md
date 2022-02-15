@@ -8,6 +8,10 @@ This allows to generate a standalone html reports, than can be later shared with
 
 Export a ipynb into html, rename it to `input.html`, put it inside jvd-report and run `render.py`.
 
+## Project Title
+
+To add a project title, add a marldown cell into de ipynb with the tag `<h1 id='title'>Project Title</h1>`.
+
 ## Table of contents
 
 To add a table of contents as a left-side navigation bar, add a markdown cell in the ipynb before exporting with the following content:
