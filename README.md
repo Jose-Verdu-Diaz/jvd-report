@@ -10,7 +10,7 @@ Export a ipynb into html, rename it to `input.html`, put it inside jvd-report an
 
 ## Project Title
 
-To add a project title, add a marldown cell into de ipynb with the tag `<h1 id='title'>Project Title</h1>`.
+To add a project title, add a markdown cell into de ipynb with the tag `<h1 id='title'>Project Title</h1>`.
 
 ## Table of contents
 
