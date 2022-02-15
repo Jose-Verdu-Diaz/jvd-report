@@ -29,7 +29,7 @@ To add a table of contents as a left-side navigation bar, add a markdown cell in
 Then you can add the following markdown preceding each section:
 
 ```html
-<a id='loading'></a>
+<a id='ref1'></a>
 ```
 
 `render.py` will automatically generate the right-bar table of contents.
