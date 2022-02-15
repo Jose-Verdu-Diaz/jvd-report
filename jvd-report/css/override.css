@@ -1,0 +1,10 @@
+.jp-Notebook {
+    padding: 0 !important;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: none;
+  }
