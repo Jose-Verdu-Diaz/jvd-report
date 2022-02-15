@@ -14,7 +14,6 @@ To add a table of contents as a left-side navigation bar, add a markdown cell in
 
 ```html
 <div id="index_div">
-<h2>Index</h2>
 <ul>
 <li><a href='#ref1'>Section1</a></li>
 <li><a href='#ref1'>Section2</a></li>
