@@ -1,6 +1,6 @@
 # jvd-report
 
-This repo contains a script to genereate beautiful reports from jupyter html experted notebooks, and also serves as a CDN for the css/js/img needed in the reports.
+This repo contains a script to genereate beautiful reports from jupyter html exported notebooks, and also serves as a CDN for the css/js/img needed in the reports.
 
 This allows to generate a standalone html reports, than can be later shared with colleagues.
 
